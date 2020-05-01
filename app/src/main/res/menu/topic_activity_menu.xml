@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/topic_subtopics"
+        android:icon="@drawable/feedback"
+        android:checked="true"
+        android:title="Topics" />
+    <item
+        android:id="@+id/topic_groups"
+        android:icon="@drawable/profile"
+        android:title="Groups" />
+    <item
+        android:id="@+id/topic_rankings"
+        android:icon="@drawable/rankings"
+        android:title="Rankings" />
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="1dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/square_textview"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="Activity.MainActivity"
+                android:scrollbarStyle="outsideOverlay">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="Group name"
+                android:background="@drawable/square_textview"
+                android:layout_margin="10dp"
+                android:id="@+id/group_name"
+                android:padding="8dp"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/membersSearch"
+                android:hint="Search"
+                android:background="@drawable/square_textview"
+                android:backgroundTint="@color/colorWhite"
+                android:padding="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/group_name"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/members"
+                android:padding="10dp"
+                android:backgroundTint="@color/colorWhite"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:background="@drawable/square_textview"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/membersSearch" />
+
+            <Button
+                android:text="Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/members"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/square_textview"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/create_group" />
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.jackson.answerme;
+package Model;
 
 /**
  * Created by DELL on 2020-01-25.
@@ -12,6 +12,7 @@ public class Grade {
         this.gradeId = gradeId;
         this.grade = grade;
     }
+
 
     public int getGradeId() {
         return gradeId;
