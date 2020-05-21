@@ -3,16 +3,19 @@
 
     <item
         android:id="@+id/topic_subtopics"
-        android:icon="@drawable/feedback"
+        android:icon="@drawable/topic"
         android:checked="true"
         android:title="Topics" />
-    <item
+    <!--<item
         android:id="@+id/topic_groups"
-        android:icon="@drawable/profile"
-        android:title="Groups" />
+        android:icon="@drawable/user_group"
+        android:title="Groups" />-->
     <item
         android:id="@+id/topic_rankings"
         android:icon="@drawable/rankings"
         android:title="Rankings" />
-
+    <item
+        android:id="@+id/topic_study"
+        android:icon="@drawable/study"
+        android:title="Study" />
 </menu>

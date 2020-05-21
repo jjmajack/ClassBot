@@ -6,12 +6,12 @@
                 android:layout_height="match_parent"
                 android:paddingTop="1dp"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:context="Activity.MainActivity">
+                tools:context="com.peuyanaga.classbot.Activity.MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:background="@drawable/square_textview"
+        android:padding="3dp"
+        android:background="@drawable/square_textview_small"
         android:layout_margin="7dp">
 
         <EditText
@@ -20,8 +20,8 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:hint="Title"
-            android:background="@drawable/square_textview"
-            android:layout_margin="15dp"
+            android:background="@drawable/square_textview_small"
+            android:layout_margin="9dp"
             android:id="@+id/title"
             android:padding="8dp"
             android:backgroundTint="@color/colorWhite"
@@ -37,8 +37,8 @@
             android:backgroundTint="@color/colorWhite"
             android:entries="@array/feedback_type_options"
             style="@style/Widget.AppCompat.Spinner.Underlined"
-            android:background="@drawable/square_textview"
-            android:layout_margin="15dp"
+            android:background="@drawable/square_textview_small"
+            android:layout_margin="9dp"
             android:layout_below="@+id/title" />
 
         <EditText
@@ -49,12 +49,12 @@
             android:padding="8dp"
             android:backgroundTint="@color/colorWhite"
             android:lines="6"
-            android:background="@drawable/square_textview"
+            android:background="@drawable/square_textview_small"
             android:gravity="top"
             android:hint="Feedback"
             android:id="@+id/feedback_body"
             android:layout_below="@+id/type"
-            android:layout_margin="15dp"/>
+            android:layout_margin="9dp"/>
 
         <Button
             android:text="Submit"
@@ -62,9 +62,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/feedback_body"
-            android:layout_margin="15dp"
+            android:layout_margin="9dp"
             android:backgroundTint="@color/colorPrimary"
-            android:background="@drawable/square_textview"
+            android:background="@drawable/square_textview_small"
             android:textColor="@color/colorWhite"
             android:id="@+id/submit_feedback" />
     </RelativeLayout>

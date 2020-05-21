@@ -6,45 +6,86 @@
                 android:layout_height="match_parent"
                 android:paddingTop="1dp"
                 android:layout_margin="3dp"
-                android:background="@drawable/square_textview"
+                android:background="@drawable/square_textview_small"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                tools:context="Activity.MainActivity"
+                tools:context="com.peuyanaga.classbot.Activity.MainActivity"
                 android:scrollbarStyle="outsideOverlay">
 
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:hint="Group name"
-                android:background="@drawable/square_textview"
+                android:background="@drawable/square_textview_small"
                 android:layout_margin="10dp"
                 android:id="@+id/group_name"
                 android:padding="8dp"
                 android:backgroundTint="@color/colorWhite"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_name"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignStart="@+id/lblGrade"
+                android:backgroundTint="@color/colorWhite"
+                android:background="@drawable/square_textview_small"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:id="@+id/spinnerSubjects" />
 
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:id="@+id/members_scroll"
+                android:layout_below="@+id/spinnerSubjects"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:isScrollContainer="true"
+                android:overScrollMode="ifContentScrolls"
+                android:backgroundTint="@color/colorWhite"
+                android:background="@drawable/square_textview_small"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:overScrollMode="always"
+                    android:id="@+id/group_members"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:layout_marginTop="1dp" />
+
+            </HorizontalScrollView>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/membersSearch"
                 android:hint="Search"
-                android:background="@drawable/square_textview"
+                android:background="@drawable/square_textview_small"
                 android:backgroundTint="@color/colorWhite"
                 android:padding="8dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_below="@+id/group_name"/>
+                android:layout_below="@+id/members_scroll"/>
             <ListView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="300dp"
                 android:id="@+id/members"
-                android:padding="10dp"
+                android:padding="0dp"
                 android:backgroundTint="@color/colorWhite"
                 style="@style/Widget.AppCompat.Spinner.Underlined"
-                android:background="@drawable/square_textview"
+                android:background="@drawable/square_textview_small"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="1dp"
@@ -58,8 +99,9 @@
                 android:layout_below="@+id/members"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/colorPrimary"
-                android:background="@drawable/square_textview"
+                android:background="@drawable/square_textview_small"
                 android:textColor="@color/colorWhite"
                 android:id="@+id/create_group" />
-
+    </RelativeLayout>
+</ScrollView>
 </RelativeLayout>

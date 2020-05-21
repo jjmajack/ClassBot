@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboard_subjects"
+        android:icon="@drawable/topic"
+        android:title="Subjects" />
+    <item
+        android:id="@+id/dashboard_groups"
+        android:icon="@drawable/user_group"
+        android:title="Groups" />
+    <item
+        android:id="@+id/dashboard_spellbee"
+        android:icon="@drawable/study"
+        android:title="Spelling" />
+</menu>
